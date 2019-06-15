@@ -7,16 +7,7 @@ public class Roupa {
     private Cor cor;
     private String preco;
     private String tecido;
-    private String fodase;
-
-    public String getFodase() {
-        return fodase;
-    }
-
-    public void setFodase(String fodase) {
-        this.fodase = fodase;
-    }
-
+    
     public String getPreco() {
         return preco;
     }
