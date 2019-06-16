@@ -17,8 +17,9 @@ public class GuardaRoupa {
             guardaRoupa.remove(roupa);
             emUso.add(roupa);
         } else {
-            guardaRoupa.remove(roupa);
+            naLavanderia.remove(roupa);
             emUso.add(roupa);
+
         }
     }
 
@@ -64,7 +65,7 @@ public class GuardaRoupa {
             }
             cont++;
         }
-        
+
         return cores.get(pos).getCor();
     }
 
@@ -78,10 +79,9 @@ public class GuardaRoupa {
                     return;
                 }
             }
-        } else {
-            novaCor.setQuantidade(1);
-            cores.add(novaCor);
         }
+        novaCor.setQuantidade(1);
+        cores.add(novaCor);
     }
 
     public void mostrarGuardaRoupa() {
