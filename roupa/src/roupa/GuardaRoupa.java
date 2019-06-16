@@ -54,22 +54,7 @@ public class GuardaRoupa {
         adionaCor(roupa.getCor());
     }
 
-    public String getCorPredominante() {
-        Integer maiorQuantidade = 0;
-        Integer cont = 0;
-        Integer pos = 0;
-        for (Cor c : cores) {
-            if (maiorQuantidade < c.getQuantidade()) {
-                maiorQuantidade = c.getQuantidade();
-                pos = cont;
-            }
-            cont++;
-        }
-
-        return cores.get(pos).getCor();
-    }
-
-    public String getCorPredomintante2() {
+    public String getCorPredomintante() {
         String corPredominante = "";
         Integer maiorQuantidade = 0;
         for (int i = 0; i < cores.size(); i++) {
@@ -111,6 +96,6 @@ public class GuardaRoupa {
     public String getStatus() {
         return "Em Uso= " + emUso.size()
                 + "Na Lavanderia= " + naLavanderia.size()
-                + "Cor Predominante= " + getCorPredomintante2();
+                + "Cor Predominante= " + getCorPredomintante();
     }
 }
